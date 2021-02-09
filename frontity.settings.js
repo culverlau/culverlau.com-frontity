@@ -1,28 +1,40 @@
 const settings = {
-  "name": "hello-frontity",
-  "state": {
-    "frontity": {
-      "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
+  name: "culverlau.com-frontity",
+  state: {
+    frontity: {
+      url: "https://wp.culverlau.com",
+      title: "Culver Lau",
+      description: "Web Design. Photography. Videography."
     }
   },
-  "packages": [
+  packages: [
     {
-      name: "my-first-theme"
+      name: "culverlau-theme"
     },
     {
-      "name": "@frontity/wp-source",
-      "state": {
-        "source": {
-          "url": "https://test.frontity.org",
-          "postTypes": [
+      name: "@frontity/wp-source",
+      state: {
+        source: {
+          // "url": "https://test.frontity.org",
+          // "postTypes": [
+          //   {
+          //     type: "destinations",
+          //     endpoint: "destinations",
+          //     archive: "/destinations"
+          //   }
+          // ]
+          url: "https://wp.culverlau.com",
+          homepage: "/home",
+          postsPage: "/blog/",
+          categoryBase: "/blog/category",
+          tagBase: "/blog/tag",
+          authorBase: "/blog/author",
+          postTypes: [
             {
-              type: "destinations",
-              endpoint: "destinations",
-              archive: "/destinations"
-            }
-          ]
+              type: "/blog/wp_template_part",
+              endpoint: "template-parts",
+            },
+          ],
         }
       }
     },

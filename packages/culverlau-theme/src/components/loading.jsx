@@ -1,5 +1,5 @@
-import React from "react"
-import { styled, keyframes } from "frontity"
+import React from 'react'
+import { styled, keyframes } from 'frontity'
 
 const Loading = () => <Spinner />
 
@@ -13,8 +13,8 @@ const spin = keyframes`
 const Spinner = styled.div`
   border: 12px solid #eee;
   border-top: 12px solid steelblue;
-  border-radius: 50%;
+  border-radius: 50%50%;
   width: 80px;
-  height: 80px;
+  height:80px;
   animation: ${spin} 2s linear infinite;
 `

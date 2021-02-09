@@ -1,5 +1,5 @@
 {
-  "name": "hello-frontity",
+  "name": "culver-frontity",
   "version": "1.0.0",
   "private": true,
   "description": "Frontity project",
@@ -23,6 +23,6 @@
     "@frontity/wp-source": "^1.10.0",
     "dayjs": "^1.10.4",
     "frontity": "^1.13.0",
-    "my-first-theme": "./packages/my-first-theme"
+    "culverlau-theme": "./packages/culverlau-theme"
   }
 }

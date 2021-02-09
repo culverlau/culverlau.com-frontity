@@ -12,25 +12,22 @@ const List = ({ state, actions }) => {
         return (
           <Link key={item.id} link={post.link}>
             {post.title.rendered}
+            <br />
           </Link>
         )
       })}
       <PrevNextNav>
         {data.previous && (
-          <button
-            onClick={() => {
-              actions.router.set(data.previous)
-            }}
-          >
+          <button onClick={() => {
+            actions.router.set(data.previous)
+          }}>
             &#171; Prev
           </button>
         )}
         {data.next && (
-          <button
-            onClick={() => {
-              actions.router.set(data.next)
-            }}
-          >
+          <button onClick={() => {
+            actions.router.set(data.next)
+          }}>
             Next &#187;
           </button>
         )}
@@ -50,6 +47,7 @@ const Items = styled.div`
     text-decoration: none;
   }
 `
+
 const PrevNextNav = styled.div`
   padding-top: 1.5em;
 
